@@ -1,0 +1,48 @@
+input[type="text"]
+{
+    font-size: 24px;
+    font-style: initial;
+    color: seagreen;
+    border-color: blueviolet;
+}
+input[type="password"]
+{
+    font-style: initial;
+    font-size:24px;
+    color: red;
+    border-color: red;
+}
+input[type="checkbox"]
+{
+    border: 0px;
+    width: 100%;
+    height: 2em;
+    border-style: hidden;
+}
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+    border-style: solid;
+}
+input[type="select"]
+{
+    transform-style: preserve-3d;
+    font-size: 50px;
+}
+#PJATK{
+    font-size:25px;
+    font-style: oblique;
+    color: seagreen;
+    border-color: blueviolet;
+}
+input[type="submit"]
+{
+    transform-style: preserve-3d;
+    font-size: 10px;
+}
+input[type="reset"]
+{
+    transform-style: preserve-3d;
+    font-size: 10px;
+}
