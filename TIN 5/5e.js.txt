@@ -1,0 +1,31 @@
+class Person{
+    constructor(id,grades){
+  this.first_name = "";
+  this.last_name = "";
+  this.id = id;
+  this.grades = grades;
+}
+  get full_Name() {
+    return this.first_name + " " + this.last_name;
+  }
+  set full_Name(first_name) {
+    let splitname = first_name.split(" ");
+    this.first_name = splitname[0] || "";
+    this.last_name = splitname[1] || "";
+  }
+  get avgGrade() {
+    var average = arr => arr.reduce((a,b) => a + b, 0) / arr.length;
+    return average(this.grades);
+  }
+  get printALL() {
+    return (
+     "Id - " + this.id + " Full name - " + this.first_name + " " + this.last_name +
+        " Average grade - " +
+        this.avgGrade
+    );
+  }
+}
+module.exports = Person;
+const per = new Person(5, [1, 2, 3, 4, 5]);
+per.full_Name = "Aleksej Klimovich";
+console.log(per.printALL);

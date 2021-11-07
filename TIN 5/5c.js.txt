@@ -1,0 +1,9 @@
+const subjects = ["math", "physics", "literature"]; 
+function Person(first_name, last_name, id){
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.id = id;
+}
+Person.prototype.subjects = subjects;
+module.exports = Person;
+console.log(Person.prototype.subjects)

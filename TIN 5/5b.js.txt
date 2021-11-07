@@ -1,0 +1,21 @@
+class Person {
+
+    constructor(name, lastname,id, grade) {
+      this.name = name;
+      this.lastname = lastname;
+      this.id = id;
+      this.grade = grade;
+
+    }
+
+    printALL() {
+      var average = arr => arr.reduce((a,b) => a + b, 0) / arr.length;
+      console.log(`Hello, my name is ${this.name}` + ` My last name is ${this.lastname}` + ` My average grade is ${average(this.grade)}`)
+    }
+  
+  }
+  
+  const per = new Person('jon', "doe",5, [1,2,3,3]);
+  
+  per.printALL();
+  console.log(Person.prototype)
