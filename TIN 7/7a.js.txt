@@ -1,0 +1,48 @@
+function math_oper(url, a, b) {
+    if (url.includes("addition")) {
+      return a + b;
+    }
+    if (url.includes("substract")) {
+      return a - b;
+    }
+    if (url.includes("divide")) {
+      return a / b;
+    }
+    if (url.includes("multiplication")) {
+      return a * b;
+    }
+}
+
+function checking (m1, m2) {
+    if(isNaN(m1) || isNaN(m2)) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+var http = require('http');
+
+var url = require('url');
+
+var server = http.createServer((request, res) => {
+    
+  var url_parts = url.parse(request.url, true);
+  var query = url_parts.query;
+
+  var num0 = parseInt(query.a);
+  var num1 = parseInt(query.b);
+
+  if(checking(num0, num1) === true) {
+    var result = math_oper(request.url, num1, num2);
+    res.write(result);
+    res.end();
+  } else {
+    res.write('Wrong input, change it ;)');
+    res.end();
+  }
+});
+
+server.listen(8080);
+
+console.log("Server on");
