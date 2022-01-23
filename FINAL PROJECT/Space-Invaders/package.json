@@ -1,0 +1,25 @@
+{
+  "name": "space-invaders",
+  "description": "",
+  "version": "0.0.1",
+  "private": true,
+  "author": "",
+  "homepage": "",
+  "contributors": [],
+  "bugs": {
+    "url": ""
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "yarn-upgrade": "^1.0.0"
+  },
+  "keywords": [],
+  "repository": "",
+  "licenses": []
+}

@@ -1,0 +1,16 @@
+.column {
+    float: right;
+    width: 50%;
+}
+
+.rowWrapper {
+    margin: 20px 0;
+}
+
+input {
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+}
